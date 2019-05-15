@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema NFe - oGestor Sistemas - Emissor de Nota Fiscal Eletrônica</title>
+    <meta name="description" content="Emissor de nota fiscal eletrônica oGestor é a melhor opção de sistema em nuvem para facilitar o dia-a-dia da sua empresa. Sem limite de emissão, sem limite de armazenamento e sem cartão de crédito. Avaliação gratuita de 15 dias."/>
+    <meta name="keywords" content="emissor nfe, emissor de nota fiscal, emitir nota fiscal, emissor prático, emissor de nfe, emissor de nota fiscal eletronica, emissor online, emissor web de nota fiscal, sistema de emissao de nota fiscal, programa de emissao de nota, emissor ilimitado, armazenamento de notas, teste grátis, avalição gratuita, nota fiscal, nota fiscal eletronica, emissor de nota fiscal eletronica, nfe, consulta nfe, portal nfe, danfe, gerador de danfe, gerar danfe, emitir danfe, nota fiscal avulsa, emitir nota fiscal mei, nf eletronica sp download, download emissor nfe 3.0, emissor nfe download sp, emissor de nfe 3.1, emissor de nfe 4.0, emissor da nf eletronica">
+
+    <link href="css/rgen_min.css" rel="stylesheet">
+    <link href="css/default.min.css" rel="stylesheet">
+    <link href="css/chatwhatsapp.min.css" rel="stylesheet">    
+
+    <link rel="icon" href="images/favicons/icon-ogestor.png">
+    <link rel="apple-touch-icon" href="images/favicons/icon-ogestor.png">
+    <link rel="apple-touch-icon" sizes="16x16" href="images/favicons/icon-ogestor16.png">
+    <link rel="apple-touch-icon" sizes="32x32" href="images/favicons/icon-ogestor32.png">
+    <link rel="apple-touch-icon" sizes="96x96" href="images/favicons/icon-ogestor96.png">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <!--[if IE 9 ]><script src="js/ie-matchmedia.js"></script><![endif]-->
+</head>
+
+<body>
+<div class="page-loader"><b class="spinner"></b></div>
+<div id="page" data-linkscroll='y'>
+	<section class="pd-tb-small bg-dark parallax" data-rgen-sm="pd-tb-medium"> 
+		<div class="container small align-c">
+			<a href="#"><img src="images/ogestor-logo-2.svg" class="mr-auto" style="" title="Logotipo oGestor Sistemas - Emissor de Notas Fiscais Ilimitado" alt="Logotipo oGestor Sistemas - 240x60 - Emissor de Notas Fiscais Ilimitado"></a>
+			
+			<div class="mr-tb-small" data-rgen-sm="mr-b-30">
+				<h1 class="title large txt-white f-2 txt-upper" data-rgen-sm="medium">Emissor NF-e Ilimitado</h1>
+				<h2 class="title-sub small txt-white op-07" data-rgen-sm="small">
+					Fácil, rápido, sem limite de emissão e armazenamento! 
+					<br />
+					Agilize seu negócio e organize os seus documentos fiscais com muito mais segurança
+				</h2>
+			</div>
+			<div class="w75 mr-auto">
+				<ul class="inline-list gt-small align-m">
+					<li class="min-px-w150" data-rgen-sm="block"><hr class="bdr-op-light-5"></li>
+					<li><h3 class="title mini mr-0 txt-white" data-rgen-sm="block align-c">Experimente Grátis</h3></li>
+					<li class="min-px-w150" data-rgen-sm="block"><hr class="bdr-op-light-5"></li>
+				</ul>
+
+				<div class="form-block bg-default rd-4 pd-lr-30 pd-t-30 pd-b-10 typo-light mr-b-10" data-rgen-sm="pd-20">
+					<form action="#" data-rgen-sm="mr-0">
+						<input type="hidden" name="bitrix_id" value="">
+						<div class="field-wrp">
+							<div class="row gt10">
+								<div class="col-md-6">
+									<div class="form-group">
+										<input class="form-control bg-white rd-4 bdr-glass w100" data-label="CNPJ da empresa" required data-msg="Digite o CNPJ da empresa" type="text" name="empresa_cnpj" placeholder="CNPJ da empresa">
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<input class="form-control bg-white rd-4 bdr-glass w100" data-label="Email" data-msg="Digite um e-mail válido" type="email" name="empresa_email" placeholder="Melhor e-mail">
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<input class="form-control bg-white rd-4 bdr-glass w100" data-label="Seu nome" required data-msg="Digite seu nome" type="text" name="empresa_contato" placeholder="Seu nome">
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<input class="form-control bg-white rd-4 bdr-glass w100" data-label="Telefone" data-msg="Digite o telefone" type="tel" name="empresa_telefone" placeholder="Melhor telefone">
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<button type="submit" id="ligacao" value="ligacao" data-loading-text="Carregando..." class="btn solid btn-dark bdr-2 block btn-reset bold-n send-form" style="min-height: 46px;">Receber Ligação</button>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<button type="submit" id="acessar" value="acessar" data-loading-text="Carregando..." class="btn solid btn-secondary bdr-2 block btn-reset bold-n send-form" style="min-height: 46px;">Acesse Agora</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+				<p class="txt-white op-04">Não é solicitado preenchimento de cartão de crédito!</p>
+			</div>
+		</div>
+		<div class="bg-holder full-wh z1">
+			<b data-bgholder="overlay" class="full-wh z5" data-bgcolor="rgba(45, 51, 69, 0.76)"></b>
+			<div data-bgholder="parallax" class="full-wh z2" data-parallax-img="images/banner.jpg"></div>
+		</div>
+
+	</section>
+
+	<section class="pd-tb-mini bg-dark" data-animate-in="fadeIn">
+		<div class="container small typo-light" data-rgen-sm="align-c">
+			<div class="row gt20">
+				<div class="col-md-7" data-rgen-sm="mr-b-30">
+					<h4 class="mr-0 fs16">
+						A empresa oGestor está há mais de 10 anos no ramo de sistemas.
+						<br /> 
+						<strong>São 10 anos transformando empresários em Gestores!</strong>
+					</h4>
+				</div>
+				
+				<div class="col-md-4 offset-md-1">
+					<a target="_blank" href="https://ogestor.com.br/" class="btn btn-default solid block">Conheça a oGestor</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="pd-tb-small" data-rgen-sm="pd-tb-small">
+		<div class="container small">
+			<div class="row gt20 mb20">
+				<div class="col-md-4" data-animate-in="fadeInUp|0.1">
+					<div class="info-obj img-t g20 small align-c">
+						<div class="img txt-default"><span class="iconwrp"><i class="pe-7s-cloud"></i></span></div>
+						<div class="info">
+							<h3 class="title mini">Acesse de qualquer lugar</h3>
+							<p class="mr-0">Acesse a qualquer hora e de qualquer lugar. Nosso sistema funciona na nuvem e estará sempre disponível quando você precisar.</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-md-4" data-animate-in="fadeInUp|0.2">
+					<div class="info-obj img-t g20 small align-c">
+						<div class="img txt-default"><span class="iconwrp"><i class="pe-7s-headphones"></i></span></div>
+						<div class="info">
+							<h3 class="title mini">Sempre prontos para te atender</h3>
+							<p class="mr-0">Nosso Suporte Especializado é altamente qualificado para te auxiliar e sanar dúvidas do sistema, além de fornecer um treinamento completo.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4" data-animate-in="fadeInUp|0.3">
+					<div class="info-obj img-t g20 small align-c">
+						<div class="img txt-default"><span class="iconwrp"><i class="pe-7s-diskette"></i></span></div>
+						<div class="info">
+							<h3 class="title mini">Emissão ilimitada</h3>
+							<p class="mr-0">Emita suas notas sem preocupação com a quantidade de emissão. Com o nosso sistema, você emite quantas notas quiser, é ilimitado</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="pd-tb-small bg-default">
+		<div class="container small align-c typo-light" data-animate-in="fadeInUp">
+			<a href="https://youtu.be/nbNthWx_RI4" class="iconbox sq60 fs60 mr-b-micro video-popup txt-default"><i class="far fa-play-circle"></i></a>
+			<h2 class="title f-2" data-rgen-sm="medium">Conheça oGestor na prática</h2>
+			<p>
+				Veja como é fácil fazer a primeira emissão de uma nota fiscal em nosso sistema. 
+				<br />
+				São mais de 10 anos de experiência visando facilitar sua experiência
+			</p>
+		</div>
+		<div class="bg-holder full-wh z0">
+			<b data-bgholder="overlay" class="full-wh z5" data-bgcolor="rgba(45, 51, 69, 0.8)"></b>
+			<div data-bgholder="parallax" class="full-wh z2" data-parallax-img="images/background-tablet.png"></div>
+			<b data-bgholder="bg-img" class="full-wh bg-cover bg-cc z1"></b>
+		</div>
+
+	</section>
+
+	<section class="pd-tb-small" data-rgen-sm="pd-tb-small">
+		<div class="container small align-c">
+			<h5 class="title f-2" data-rgen-sm="medium">O que dizem nossos clientes</h5>
+			<hr class="mr-tb-mini max-px-w140 bdr-b-2 mr-auto" data-rgen-sm="mr-tb-30">
+			<div class="w75 mr-auto" data-animate-in="fadeIn">
+				<p class="title-sub small mr-b-tiny" data-rgen-sm="small">
+					"Sou contador e sempre tive problemas com clientes que usavam o emissor do governo. Para todos nossos clientes nós indicamos oGestor NF-e e ajudou muito nosso dia-a-dia. Nosso trabalho reduziu muito, pois temos em tempo real todas as informações necessárias do cliente."
+				</p>
+				
+				<h6 class="title tiny mr-0">Elton Rodrigo</h6>
+				<p class="fs12"><em>Proativo Contabilidade - São José do Rio Preto</em></p>
+				<span class="sq60 iconbox"><img src="images/proativo_elton.png" class="rd"></span>
+			</div>
+		</div>
+		<div class="bg-holder full-wh z0">
+			<b data-bgholder="overlay" class="full-wh z5" data-bgcolor="rgba(45, 51, 69, 0)"></b>
+			<div data-bgholder="parallax" class="full-wh z2"></div>
+			<b data-bgholder="bg-img" class="full-wh bg-cover bg-cc z1"></b>
+		</div>
+	</section>
+	
+	<section class="pd-tb-medium bg-default" data-rgen-sm="pd-tb-medium">
+		<div class="container small typo-light align-c">
+			<div class="w75 mr-auto" data-animate-in="fadeInUp">
+				<h2 class="title mr-b-mini" data-rgen-sm="medium">
+					Emissor NF-e ILIMITADO
+					<br />
+					por apenas R$ 49,90
+				</h2>
+				<p class="fs16 mr-b-mini">
+					Emitir o seu NF-e nunca foi tão fácil. Tenha um sistema que veio para aumentar a produtividade da sua empresa, utilizando recursos que facilitarão o seu dia a dia, sempre pronto a atender sua necessidade e de seu cliente.
+				</p>
+				<a id="contratar-bottom" href="#" class="btn btn-secondary solid">Contratar Agora</a>
+			</div>
+		</div>
+
+		<div class="bg-holder full-wh z0">
+			<b data-bgholder="overlay" class="full-wh z5" data-bgcolor="rgba(45, 51, 69, 0.9)"></b>
+			<div data-bgholder="parallax" class="full-wh z2" data-parallax-img="images/bg-img-02.jpg"></div>
+			<b data-bgholder="bg-img" data-bg="" class="full-wh bg-cover bg-cc z1"></b>
+		</div>
+	</section>
+	
+	<footer class="pos-rel pd-tb-tiny bg-dark" data-rgen-sm="pd-tb-small">	
+		<div class="container small typo-light" data-rgen-sm="align-c">
+			<div class="row gt20">
+				<div class="col-md-6" data-rgen-sm="mr-b-30">
+					<p class="mr-0 op-05"><a href="https://ogestor.com.br" target="_blank">oGestor Sistemas</a> &copy; <span class="copyright-year"></span></p>
+				</div>
+				
+				<div class="col-md-6 align-r" data-rgen-sm="align-c">
+					<a target="_blank" href="http://api.whatsapp.com/send?phone=551149494452&text=Olá, gostaria de mais informações a respeito do Emissor NF-e oGestor!">Chame-nos no Whatsapp</a>
+					<span class="mr-lr-10">|</span>
+					<a target="_blank" href="mailto:comercial@ogestor.com.br">Envie-nos um e-mail</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+</div>
+
+<div id="recolhechatWhats" style="right: -260px;"><span></span></div>
+<div id="expandechatWhats" style="right: 0;"><span title="Fale conosco pelo WhatsApp!"></span></div>
+<div id="chatWhats" title="Clique no telefone e fale conosco pelo WhatsApp WEB." style="right: -260px;">
+    <div class="chatWhats chatUnico" title="Clique e fale conosco pelo WhatsApp WEB.">
+        <a href="https://api.whatsapp.com/send?l=pt&phone=551149494452&text=Ola, gostaria de informacoes sobre o emissor oGestor" target="_blank">
+	        <strong>Fale conosco pelo WhatsApp</strong>
+	        <span class="new_tel_whatsapp_fone">
+	            <span class="new_tel_ddd">
+	                <span class="new_tel_ddd_parenteses">(</span>11<span class="new_tel_ddd_parenteses">)</span></span> <span class="new_tel_telefone">4949<span class="new_tel_traco">-</span>4452</span>
+	        </span>
+        </a>
+    </div>
+</div>
+
+<a href="https://api.whatsapp.com/send?l=pt&phone=551149494452&text=Ola, gostaria de informacoes sobre o emissor oGestor" class="vWhatsFale chatwhatsUnico" target="_blank">
+    <div id="chatwhatsMobile" class="chatwhatsUnico" style="display: none;"></div>
+</a>
+
+<div class="swal2-container swal2-center swal2-fade swal2-shown" style="overflow-y: auto; display: none;">
+    <div role="dialog" aria-modal="true" aria-labelledby="swal2-title" aria-describedby="swal2-content" class="swal2-popup swal2-modal swal2-show" tabindex="-1" style="width: 500px; padding: 20px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; display: flex;">
+        <div class="swal2-icon swal2-success swal2-animate-success-icon" style="display: block;">
+            <div class="swal2-success-circular-line-left" style="background: rgb(255, 255, 255) none repeat scroll 0% 0%;"></div>
+            <span class="swal2-success-line-tip swal2-animate-success-line-tip"></span> 
+            <span class="swal2-success-line-long swal2-animate-success-line-long"></span>
+            <div class="swal2-success-ring"></div>
+            <div class="swal2-success-fix" style="background: rgb(255, 255, 255) none repeat scroll 0% 0%;"></div>
+            <div class="swal2-success-circular-line-right" style="background: rgb(255, 255, 255) none repeat scroll 0% 0%;"></div>
+        </div>
+        <div class="swal2-contentwrapper">
+            <h2 class="swal2-title" id="swal2-title">Tudo certo!</h2>
+            <div id="swal2-content" class="swal2-content" style="display: block;">
+                Ligaremos para você o mais rápido possível.
+            </div>
+        </div>
+        <div class="swal2-buttonswrapper" style="display: flex;">
+            <button type="button" class="swal2-confirm swal2-styled" aria-label="" style="background-color: rgb(48, 133, 214); border-left-color: rgb(48, 133, 214); border-right-color: rgb(48, 133, 214);">
+                OK
+            </button>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/jquery.mask.min.js"></script>
+<script src="js/exit-intent.js"></script>
+<script src="js/custom.min.js"></script>
+<script src="js/rgen_min.js"></script>
+<script src="js/whatsapp.min.js"></script>
+
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5cd59b89d07d7e0c6392f519/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+<!-- Hotjar Tracking Code for https://emissornfeweb.com.br -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:1315602,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118201909-8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-118201909-8');
+</script>
+
+
+</body>
+</html>
