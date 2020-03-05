@@ -36,6 +36,59 @@
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KKWHZDV"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
+
+<div class="exit_overlay" style="width: 100%; height: 100%;  position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 1050;background-color: rgba(0,0,0,0.7); display: none;">
+	<div style="width: 600px;margin: 50px auto;background-color: #FFF;height: 500px;">
+		<div style="width: 100%;height: 100%;margin: auto;">
+			<button type="button" class="close" id="close_exit_overlay" data-dismiss="modal" aria-label="Close" style="float: right;font-size: 1.5rem;font-weight: 700;line-height: 1;color: #000;text-shadow: 0 1px 0 #fff;opacity: .5;background-color: transparent;border: 0;-webkit-appearance: none;-moz-appearance: none;appearance: none;">
+				<span aria-hidden="true">×</span>
+			</button>
+			<form action="#" data-rgen-sm="mr-0">
+					<input type="hidden" name="bitrix_id" value="">
+					<div class="field-wrp">
+						<div class="row gt0 p-50">
+							<h5 class="title-exit-intent">ESPERE! Qual o motivo de não conseguirmos atendê-lo?</h5>
+							<p>Conte-nos o que faltou para conseguirmos ajudar na gestão da sua empresa:</p>
+							<div class="col-md-12">
+								<div class="form-group">
+									<select class="form-control bg-white rd-4 w100" required data-label="Motivo" data-msg="Escolha o motivo" name="motivo_desistencia" placeholder="Motivo">
+										<option value="">Selecione um motivo</option>
+										<option value="Valor do sistema">Valor do sistema</option>
+										<option value="Falta de informações sobre o sistema">Falta de informações sobre o sistema</option>
+										<option value="Falta de credibilidade na empresa">Falta de credibilidade na empresa</option>
+										<option value="Dificuldade no cadastro">Dificuldade no cadastro</option>
+										<option value="Atendimento inadequado">Atendimento inadequado</option>
+										<option value="Procuro outra coisa">Procuro outra coisa</option>
+									</select>
+								</div>
+							</div>	
+							<div class="col-md-12">
+								<div class="form-group">
+									<input class="form-control bg-white rd-4 w100" required data-label="Email" data-msg="Digite um e-mail válido" type="email" name="empresa_email" placeholder="E-mail">
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="form-group">
+									<input class="form-control bg-white rd-4 w100" required data-label="Nome" data-msg="Digite seu nome" type="text" name="empresa_contato" placeholder="Nome">
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="form-group">
+									<input class="form-control bg-white rd-4 w100" required data-label="Telefone" data-msg="Digite o telefone" type="tel" name="empresa_telefone" placeholder="Telefone">
+								</div>
+							</div>			
+							<div class="col-md-12">
+								<div class="form-group">
+									<button type="submit" id="exit" value="exit" data-loading-text="Carregando..." class="btn solid btn-secondary bdr-2 block btn-reset bold-n send-form" style="min-height: 46px;">Enviar</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</form>
+		</div>
+	</div>
+</div>
+
 <div class="page-loader"><b class="spinner"></b></div>
 <div id="page" data-linkscroll='y'>
 	<section class="pd-tb-small bg-dark parallax" data-rgen-sm="pd-tb-medium"> 
@@ -308,7 +361,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 </div>
 
-<div class="swal2-container swal2-center swal2-fade swal2-shown" style="overflow-y: auto; display: none;">
+<div class="swal2-container swal2-center swal2-fade swal2-shown novo-cadastro" style="overflow-y: auto; display: none;">
     <div role="dialog" aria-modal="true" aria-labelledby="swal2-title" aria-describedby="swal2-content" class="swal2-popup swal2-modal swal2-show" tabindex="-1" style="width: 500px; padding: 20px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; display: flex;">
         <div class="swal2-icon swal2-success swal2-animate-success-icon" style="display: block;">
             <div class="swal2-success-circular-line-left" style="background: rgb(255, 255, 255) none repeat scroll 0% 0%;"></div>
@@ -322,6 +375,30 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <h2 class="swal2-title" id="swal2-title">Tudo certo!</h2>
             <div id="swal2-content" class="swal2-content" style="display: block;">
                 Você será redirecionado para concluir o cadastro.
+            </div>
+        </div>
+        <div class="swal2-buttonswrapper" style="display: flex;">
+            <button type="button" class="swal2-confirm swal2-styled" aria-label="" style="background-color: rgb(48, 133, 214); border-left-color: rgb(48, 133, 214); border-right-color: rgb(48, 133, 214);">
+                OK
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="swal2-container swal2-center swal2-fade swal2-shown resposta-exit" style="overflow-y: auto; display: none;">
+    <div role="dialog" aria-modal="true" aria-labelledby="swal2-title" aria-describedby="swal2-content" class="swal2-popup swal2-modal swal2-show" tabindex="-1" style="width: 500px; padding: 20px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; display: flex;">
+        <div class="swal2-icon swal2-success swal2-animate-success-icon" style="display: block;">
+            <div class="swal2-success-circular-line-left" style="background: rgb(255, 255, 255) none repeat scroll 0% 0%;"></div>
+            <span class="swal2-success-line-tip swal2-animate-success-line-tip"></span> 
+            <span class="swal2-success-line-long swal2-animate-success-line-long"></span>
+            <div class="swal2-success-ring"></div>
+            <div class="swal2-success-fix" style="background: rgb(255, 255, 255) none repeat scroll 0% 0%;"></div>
+            <div class="swal2-success-circular-line-right" style="background: rgb(255, 255, 255) none repeat scroll 0% 0%;"></div>
+        </div>
+        <div class="swal2-contentwrapper">
+            <h2 class="swal2-title" id="swal2-title">Obrigado pelo seu feedback!</h2>
+            <div id="swal2-content" class="swal2-content" style="display: block;">
+                Somente com ele é possível saber onde melhorar, para que possamos melhor atende-lo!
             </div>
         </div>
         <div class="swal2-buttonswrapper" style="display: flex;">
